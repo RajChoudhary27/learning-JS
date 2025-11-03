@@ -2,6 +2,9 @@
 //Definition:
 //Singleton ka matlab hota hai — sirf ek hi instance (object) create hona chahiye puri application me.
 //JavaScript me Singleton object hum tab banate hain jab sirf ek object chahiye jo globally use ho sake.
+//jadatar cases me hum object literal ya object constructor ka use karte hain singleton object banane ke liye.
+//literal ka matlab hai ki hum directly curly braces {} ka use karke object banate hain.
+//constructor ka matlab hai ki hum Object() constructor function ka use karke object banate hain.
 
 const tinderuser=new Object(); //Object Creation using Object Constructor. Singleton Object
 

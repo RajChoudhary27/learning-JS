@@ -1,4 +1,4 @@
-// Javascript mai objects key-value pairs ka collection hote hai.
+//Javascript mai objects key-value pairs ka collection hote hai.
 //ye ek complex data type hai jo real-world entities ko represent karte hai.
 //isme hum properties (key-value pairs) aur methods (functions) define kar sakte hai.
 
@@ -13,7 +13,7 @@ let person = {
     name: 'John',
     age: 30,
     email:"John@gmail.com",
-    [sym1]: 'This is a symbol property',  //symbol ko bracket notation me hi access kar sakte hai
+    [sym1]: 'This is a symbol property',  //symbol ko bracket notation me hi access kar sakte hai kyuki ye unique hota hai.
    greet: function() {
         console.log("Hello!");
     }
@@ -22,7 +22,9 @@ console.log(person.name); // Accessing property
 console.log(person.age);  // Accessing property
 console.log(person[sym1]); // Accessing symbol property
 console.log(person['name']); // Accessing property using bracket notation
-
+//dono acess karne ke tarike mai difference ye hai ki
+//dot notation tab use karte hai jab property name valid identifier ho
+//bracket notation tab use karte hai jab property name space ya special character contain karta ho ya variable ho
 //Modifying object properties
 person.age = 31;
 person['email'] = "johnnew@gmail.com";

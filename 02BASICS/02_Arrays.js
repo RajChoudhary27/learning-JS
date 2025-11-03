@@ -34,15 +34,20 @@ console.log(Array.isArray('Hello'))//check if string is an array
 console.log(Array.from('Hello'))//creates array from string
 //output: ['H', 'e', 'l', 'l', 'o']
 //Array.from() method creates a new array from an array-like or iterable object
-
-console.log(Array.of(1, 2, 3, 4, 5))//creates array from arguments
+//Array.from() can be used to convert strings into arrays of characters
 //output: [1, 2, 3, 4, 5]
 //Array.of() method creates a new array from a variable number of arguments
+// ye sirf strings ke liye hi nahi, sets or maps ke liye bhi use hota hai
 
+console.log(Array.of(1, 2, 3, 4, 5))//creates array from arguments
 console.log(Array.from({name: 'John', age: 30}))//creates array from object
 //output: [undefined, undefined]  or []
 //Array.from() method creates a new array from an array-like or iterable object
 //In this case, the object is not iterable, so it returns an array with undefined values
+//Array.from() works best with iterable objects like strings, sets, and maps
+//difference between Array.from() and Array.of()
+//Array.from() creates an array from an array-like or iterable object
+//Array.of() creates an array from a variable number of arguments
 
 let score1=10;
 let score2=20;
