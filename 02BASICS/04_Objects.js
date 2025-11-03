@@ -70,3 +70,21 @@ usersFromDB.forEach(user => {
     console.log(`User ID: ${user.id}, Name: ${user.name}, Age: ${user.age}`);
 });
 //Yeh sabse common use case hai objects ka JavaScript me.
+
+//Destructuring Objects
+//Destructuring ka matlab hota hai ki hum object ke properties ko alag alag variables me extract kar lete hain.
+const course ={
+    courseName:"JavaScript Basics",
+    price:199,
+    courseInstructor:"Hitesh Choudhary",
+}
+//samjho hume baar baar course.courseName ya course.price likhna pad raha hai.
+//toh hum destructuring ka use kar sakte hain.
+const {courseName, price}=course; //Destructuring Object
+const {courseInstructor:Instructor}=course; //Destructuring with aliasing
+console.log("Course Name :- ", courseName); //Accessing destructured variable
+console.log("Course Price :- ", price); //Accessing destructured variable
+console.log("Course Instructor :- ", Instructor); //Accessing destructured variable
+//Isse fayda yeh hota hai ki hum directly variables ka use kar sakte hain bina object ke naam ke saath.
+//Yeh code zyaada clean aur readable ban jata hai.
+
