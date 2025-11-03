@@ -3,6 +3,9 @@ const dc_heroes = ['Batman', 'Superman','flash'];
 
 marvel_heroes.push(dc_heroes); //outer array me inner array push ho gaya
 console.log("After Push Operation :- "+ marvel_heroes)//after push operation
+//output me dikhayega ['Iron Man', 'Captain America', ['Batman', 'Superman','flash']]
+//3rd element ek array hai jo dc_heroes ka reference hai
+//original marvel_heroes array me changes ho gaye hain push karne ke baad
 console.log(marvel_heroes[2][1]);
 
 const all_heroes=marvel_heroes.concat(dc_heroes);

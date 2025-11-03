@@ -1,8 +1,8 @@
 //Arrays
 //arrays are used to store multiple values in a single variable
-//Array use shallow copy
-//Array can hold values of different data types
-//deep copy can be created using slice() or spread operator
+//Array use shallow copy means ki agar hum ek array ko dusre array me assign karte hain to dono arrays same memory location ko point karte hain.
+//Array can hold values of different data types so it is a heterogeneous data structure.
+//deep copy can be created using slice() or spread operator and used to modify without affecting original array.
 
 //Creating an array
 let fruits = ['Apple', 'Banana', 'Orange'];
@@ -15,6 +15,7 @@ console.log("Second Fruit :- "+ fruits[1])//second fruit
 //Modifying array elements
 fruits[2] = 'Mango';
 console.log("Modified Fruits Array :- "+ fruits)//modified fruits array
+//element at index 2 changed from Orange to Mango. Now fruits array is ['Apple', 'Banana', 'Mango']
 
 //Array length
 console.log("Fruits Array Length :- "+ fruits.length)//fruits array length
@@ -41,7 +42,7 @@ for(let i=0; i<fruits.length; i++){
 }
 
 // for (let variable of iterable) {
-//   // code block
+//     code block
 // }
 console.log("Iterating through Fruits Array using for...of :- ");
 for(let fruit of fruits){
@@ -60,11 +61,11 @@ console.log("Removed Element using Pop :- "+ removedElement)//removed element
 console.log("Array after Pop Operation :- "+ arr)//array after pop operation
 
 console.log("Array Length :- "+ arr.length)//array length
-console.log("Includes 20 in Array :- "+ arr.includes(20))//includes 20 in array
-console.log("Indexof 30 in Array :- "+ arr.indexOf(30))//index of 30 in array
-const newarr =arr.join();  //converting array to string
-console.log("Array converted to String using Join :- "+ newarr)//array converted to string
-
+console.log("Includes 20 in Array :- "+ arr.includes(20))//includes 20 in array.new array me 20 hai to true return karega
+console.log("Indexof 30 in Array :- "+ arr.indexOf(30))//index of 30 in array means 30 ka index kya hai array me vo return karega.agar 30 nahi hoga to -1 return karega
+const newarr =arr.join();  //converting array to string used in csv files or data transfer between systems.
+console.log("Array converted to String using Join :- "+ newarr)//array converted to string.naya string me convert ho gaya hai ab vo comma separated values ban gaya hai.
+//usko dusri memory me store kar leta hai as a string.
 
 // ----------------------------------------------------------------------------------------------------
 // | Method         | Description                          | Example Output                           |
@@ -76,8 +77,6 @@ console.log("Array converted to String using Join :- "+ newarr)//array converted
 // | 'indexOf()'    | Get index of element in array        | `2` (for element `30`)                   |
 // | 'join()'       | Convert array to string              | `'Apple,Banana,Mango'`                   |
 // ----------------------------------------------------------------------------------------------------    
-//let fruits = ['Apple', 'Banana', 'Orange'];
-//let numbers = [1, 2, 3, 4, 5];
 // ----------------------------------------------------------------------------
 // Example Outputs may vary based on the operations performed on the arrays.
 // -----------------------------------------------------------------------------                
@@ -86,6 +85,7 @@ console.log("Array converted to String using Join :- "+ newarr)//array converted
 let index = arr1.indexOf(30);
 console.log("Index of 30 in Array :- "+ index)//index of 30 in array
 
+//splice(start, deleteCount, item1, item2, ...)
 arr1.splice(2, 1); //removing element at index 2
 console.log("Array after Splice :- "+ arr1)//array after splice
 
@@ -102,11 +102,12 @@ console.log(arr2); // [10, 25, 35, 40, 50]
 // Replace elements
 arr.splice(2, 1, 99);
 console.log(arr2); // [10, 25, 99, 40, 50]
+//original array me changes hote hain splice me
 
-
-let slicedArray = arr1.slice(1, 3); //slicing array from index 1 to 3
-console.log("Sliced Array (index 1 to 3) :- "+ slicedArray)//sliced array
-
+let slicedArray = arr2.slice(1, 3); //slicing array from index 1 to 3
+console.log("Sliced Array (index 1 to 3) :- "+ slicedArray)//sliced array output-- [20, 30]
+//original array remains unchanged
+console.log("Original Array after Slicing :- "+ arr2)//original array after slicing
 // --------------------------------------------------------------------------------------------
 // | Method         | Description                            | Example Output                 |
 // | -------------- | -------------------------------------- | ------------------------------ |
@@ -130,8 +131,8 @@ console.log(colors.includes("black")); // false
 
 // 🔹 sort() & reverse()
 let nums = [3, 1, 5, 2];
-nums.sort();        // [1,2,3,5]
-nums.reverse();     // [5,3,2,1]
+nums.sort();        // [1,2,3,5] sort in ascending order
+nums.reverse();     // [5,3,2,1] reverse the array used to get descending order
 
 
 // ⚠️ Note: sort() strings ke basis pe sort karta hai.
@@ -146,10 +147,9 @@ let deepCopyArray1 = arr1.slice();
 deepCopyArray1[0] = 99;
 console.log("Original Array after Deep Copy using Slice :- "+ arr1)//original array
 console.log("Deep Copied Array using Slice :- "+ deepCopyArray1)//deep copied array
-
+//Deep  copy original array me changes nahi hote hain.jabtak hum deep copy bana ke usme changes karte hain to original array unaffected rehta hai.
 //Deep copy using spread operator
 let deepCopyArray2 = [...fruits];
 deepCopyArray2[0] = 'Pineapple';
 console.log("Original Fruits Array after Deep Copy using Spread Operator :- "+ fruits)//original fruits array
 console.log("Deep Copied Fruits Array using Spread Operator :- "+ deepCopyArray2)//deep copied fruits array
-
