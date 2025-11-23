@@ -1,0 +1,220 @@
+<!-- DOM is document object model is -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>DOM LEARNING</title>
+</head>
+<body>
+    <div class="br-black" >
+   <h1 class="heading" id="title">DOM LEARNING on chai or code</h1>
+   <p>lorem 
+    ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quidem.
+   </p>
+   <input type="password" name="" id="">
+   <ul>
+     <li>One</li>
+     <li>Two</li>
+     <li>Three</li>
+   </ul>
+    </div>
+</body>
+</html>
+
+// JS Notes
+
+// DOM (Document Object Model) is a programming interface for web documents.
+// It represents the HTML page as a tree of nodes, where each node is a part of the document 
+// (like elements, text, attributes, etc.).
+
+// The DOM allows programming languages (especially JavaScript) to interact with the web page. 
+// Using the DOM, developers can modify structure, style, and content dynamically.
+
+// A web page can be seen in two ways: 
+// 1) As visible content in the browser
+// 2) As HTML source code
+// Both represent the same document, and the DOM provides a way to access and manipulate it.
+
+// DOM is language-independent, but it is most commonly used with JavaScript in web development.
+
+// The browser automatically creates the DOM when a web page loads.
+
+// Example actions using DOM:
+// - Change heading text
+// - Add or remove elements
+// - Apply styles dynamically (e.g., change button color on click)
+
+// DOM is essential for creating interactive and dynamic web applications.
+
+// Example of accessing DOM elements using JavaScript:
+// document.getElementById("id")
+// document.getElementsByClassName("class")
+// document.getElementsByTagName("tag")
+// document.querySelector("selector") it only selects first matching element
+// document.querySelectorAll("selector") it selects all matching elements
+// These methods allow you to select and manipulate elements in the DOM.
+
+// Example of modifying an element's content:
+// document.querySelector(".heading").innerText = "New Heading Text";
+
+// Example of changing an element's style:
+// document.querySelector(".br-black").style.backgroundColor = "black";
+
+//suppose you have list of items and you want to change color of each item you can use loop
+// const items = document.querySelectorAll(".item");
+// items.forEach((item) => {    
+//     item.style.color = "blue";
+// });  
+// This code selects all elements with the class "item" and changes their text color to blue using a loop.
+
+//suppose you have h1 tag and you want to change text of h1 tag
+// const heading = document.querySelector("h1");
+// heading.innerText = "New Heading Text";  
+// This code selects the first <h1> element and changes its text content to "New Heading Text".
+
+//suppose you have paragraph tag and you want to change background color of paragraph tag
+// const paragraph = document.querySelector("p");
+// paragraph.style.backgroundColor = "yellow";  
+// This code selects the first <p> element and changes its background color to yellow.
+
+//document.getElementById('title').getAttribute('class'); // returns the class attribute of the element with id 'title'
+//document.getElementById('title').setAttribute('class', 'new-class'); // sets the class attribute of the element with id 'title' to 'new-class'
+//document.getElementById('title').setAttribute('class', 'another-class'); // updates the class attribute of the element with id 'title' to 'another-class'
+// These methods allow you to get and set attributes of DOM elements.
+
+// Example of creating and appending a new element:
+// const newDiv = document.createElement("div");
+// newDiv.innerText = "Hello, I am a new div!";
+// document.body.appendChild(newDiv);
+// This code creates a new <div> element, sets its text content, and appends it to the body of the document.
+
+// Example of removing an element:
+// const elementToRemove = document.querySelector(".br-black");
+// elementToRemove.remove();
+// This code selects the first element with the class "br-black" and removes it from the DOM.
+
+//const title=document.getElementById("title");
+//title.style.color="blue";
+// This code selects the element with the id "title" and changes its text color to blue
+//title.innerText="DOM Learning Updated";
+// This code updates the text content of the element with the id "title" to "DOM Learning Updated".
+//title.innerHTML="<i>DOM Learning in Italics</i>";
+// This code sets the inner HTML of the element with the id "title" to italicized text "DOM Learning in Italics".  
+//title.textContent="DOM Learning Text Content";
+// This code sets the text content of the element with the id "title" to "DOM Learning Text Content".
+// The differences between innerText, innerHTML, and textContent are:
+// - innerText: Gets or sets the visible text content of an element, taking into account CSS styles.
+// - innerHTML: Gets or sets the HTML content of an element, allowing for HTML tags.
+// - textContent: Gets or sets the text content of an element, ignoring HTML tags and styles.and shows all text including hidden text.
+
+//document.getElementByClassName("heading");
+//ye html collection return karta hai jisme sare elements hote hai jinke pass wo class hoti hai or usme se hum index ke through access kar sakte hai
+//const headingClass=document.getElementsByClassName("heading");
+//headingClass[0].style.color="red";
+// This code selects all elements with the class "heading" and changes the text color of the
+
+//Acess list elements and change them
+//const mylist=document.querySelectorAll('ul li');
+//mylist.forEach((item)=>{
+//    item.style.color='green'; 
+//});   
+//list gives nodelist and we can use forEach loop on nodelist directly.
+//mylist[0].style.color='blue';
+// This code selects all <li> elements within <ul> and changes their text color to green using a loop.
+// It also changes the text color of the first <li> element to blue
+
+//Array.from(mylist).forEach((item)=>{
+//    item.style.fontSize='20px';
+//});
+// This code converts the NodeList of <li> elements into an array and changes their font size to 20px using a loop.
+
+//const myH2document.querySelectorall('h2');
+//myH2.innerText="This is new h2";
+// This code selects all <h2> elements and changes the text of the first <h2> element to "This is new h2".
+//myH2.forEach((item)=>{
+//    item.style.color='purple';
+//});
+// This code changes the text color of all <h2> elements to purple using a loop.
+
+<!-- <div class="parent">
+<div class="day">Monday</div>
+<div class="day">Tuesday</div>
+<div class="day">Wednesday</div>
+<div class="day">Thursday</div>
+</div>> -->
+//const parent=document.querySelector('.parent');
+//console.log(parent.children);
+// This code selects the element with the class "parent" and logs its child elements to the console.
+//const days=parent.querySelectorAll('.day');
+//days.forEach((item)=>{
+//    item.style.color='orange';
+//});
+//console.log(parent.firstElementChild);
+//console.log(parent.lastElementChild);
+//console.log(dayOne.nextElementSibling);
+// This code selects all elements with the class "day" within the "parent" element and changes their text color to orange using a loop.
+
+//create div element and append to body
+//const newDiv=document.createElement('div');
+//newDiv.innerText="Hello, I am a new div";
+//document.body.appendChild(newDiv);
+// This code creates a new <div> element, sets its text content, and appends it to the body of the document.
+//create li element and append to ul
+//const newLi=document.createElement('li');
+//newLi.innerText="Four";
+//const ul=document.querySelector('ul');
+//ul.appendChild(newLi);
+// This code creates a new <li> element with the text "Four" and appends it to the existing <ul> element.
+
+//remove element
+//const heading=document.querySelector('.heading');
+//heading.remove();
+// This code selects the first element with the class "heading" and removes it from the DOM.
+//div.className="new-class";
+// This code sets the class name of the selected <div> element to "new-class".
+//div.id="new-id";
+// This code sets the id of the selected <div> element to "new-id".
+//div.setAttribute('data-info','some-data');
+// This code sets a custom attribute 'data-info' with the value 'some-data' on the selected <div> element.
+//const attrValue=div.getAttribute('data-info');
+//console.log(attrValue);
+// This code retrieves the value of the custom attribute 'data-info' from the selected <div> element and logs it to the console.
+
+//function addlanguage(langname){
+//    const newLi=document.createElement('li');
+//    newLi.innerText=langname;
+//    const ul=document.querySelector('ul');
+//    ul.appendChild(newLi);
+//}
+//addlanguage('JavaScript');
+//addlanguage('Python');
+//addlanguage('Java');
+// This code defines a function `addlanguage` that creates a new <li> element with the provided language name and appends it to the existing <ul> element.
+// It then calls the function three times to add different programming languages to the list. 
+// The result is a list of programming languages displayed on the web page.
+
+//Edit
+const secondlang=document.querySelectorAll('ul li')[1];
+secondlang.innerText="C++";
+// This code selects the second <li> element within the <ul> and changes its text content to "C++".
+
+ //Delete
+const thirdlang=document.querySelectorAll('ul li')[2];
+thirdlang.remove();
+// This code selects the third <li> element within the <ul> and removes it from the DOM.
+  
+//Replace
+const firstlang=document.querySelectorAll('ul li')[0];
+const newlang=document.createElement('li');
+newlang.innerText="Ruby";
+firstlang.replaceWith(newlang);
+// This code selects the first <li> element within the <ul>, creates a new <li> element with the text "Ruby", and replaces the first <li> element with the new one.
+
+// The final result is an updated list of programming languages displayed on the web page.  
+// The differences between innerText, innerHTML, and textContent are:
+// - innerText: Gets or sets the visible text content of an element, taking into account CSS styles.
+// - innerHTML: Gets or sets the HTML content of an element, allowing for HTML
+// - innerHTML: Gets or sets the HTML content of an element, allowing for HTML tags.
+// - textContent: Gets or sets the text content of an element, ignoring HTML tags and styles.and shows all text including hidden text.  
+
+
+//
