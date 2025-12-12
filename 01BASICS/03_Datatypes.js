@@ -21,7 +21,7 @@ console.log("Boolean:", bool);
 let undef;
 console.log("Undefined:", undef);
 
-// Null   typeof null is object (this is a known quirk in JavaScript)
+// Null  typeof null is object (this is a known quirk in JavaScript)
 let nll = null;
 console.log("Null:", nll);
 

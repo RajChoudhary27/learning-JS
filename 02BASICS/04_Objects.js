@@ -87,4 +87,3 @@ console.log("Course Price :- ", price); //Accessing destructured variable
 console.log("Course Instructor :- ", Instructor); //Accessing destructured variable
 //Isse fayda yeh hota hai ki hum directly variables ka use kar sakte hain bina object ke naam ke saath.
 //Yeh code zyaada clean aur readable ban jata hai.
-

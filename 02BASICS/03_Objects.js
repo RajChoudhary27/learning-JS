@@ -47,4 +47,3 @@ console.log(person.greeting);//sirf function reference aaya hai print nahi hua. 
 //Deleting properties
 delete person.email;
 console.log("Person Object after deleting email :- ", person); // Object after deleting property
-

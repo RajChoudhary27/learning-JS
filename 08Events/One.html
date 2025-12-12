@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="EventBasics.js" defer></script>
+    <title>Event Basics</title>
+</head>
+<body>
+    <h1>Event Basics</h1>
+    <p>Click the button to see an alert.</p>
+    <button id="alertButton">Click Me!</button>
+    <p>Hover over the image to see a message.</p>
+    <img id="hoverImage" src="image.jpg" alt="Sample Image" width="300">
+
+    <script>
+        document.getElementById('alertbutton').addEventListener('click',function(){
+
+        })
+        // Adding an event listener to the button
+        document.getElementById('alertButton').addEventListener('click', function() {
+            alert('Button was clicked!');
+        });
+
+        // Adding an event listener to the image
+        document.getElementById('hoverImage').addEventListener('mouseover', function() {
+            console.log('Image was hovered over!');
+        });
+    </script>
+</body>
+</html>

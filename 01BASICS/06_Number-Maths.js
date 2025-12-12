@@ -50,6 +50,7 @@ console.log("Math pow :- "+ Math.pow(2,3)) //pow
 console.log("Math min :- "+ Math.min(4,2,8,1)) //min
 console.log("Math max :- "+ Math.max(4,2,8,1)) //max
 console.log("Math random :- "+ Math.random()) //random
+//Math.random mai vale 0 se 1 ke beech ka decimal value deta hai.pura 1 kabhi nahi deta hai.
 console.log("Math round of random between 1 to 10 :- "+ Math.floor(Math.random()*10)+1) //random between 1 to 10
 const min =10
 const max =20

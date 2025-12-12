@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<!-- <pre>
+Value  State	           Description
+0	   UNSENT	           Client has been created. open() not called yet.
+1	   OPENED	           open() has been called.
+2	   HEADERS_RECEIVED	   send() has been called, and headers and status are available.
+3	   LOADING	           Downloading; responseText holds partial data.
+4	   DONE	               The operation is complete.
+</pre> -->
+</body>
+<script>
+    const xhr=new XMLHttpRequest();  //object creation
+    xhr.open('GET','https://jsonplaceholder.typicode.com/posts',true); //true means asynchronous
+    xhr.onreadystatechange=function(){
+        console.log(`readyState : ${xhr.readyState}`); //checking state changes
+        if(xhr.readyState===4){  //when request is complete
+            if(xhr.status===200){ 
+                const data =JSON.parse(this.responseText)
+                console.log(typeof data)
+                console.log(data[0].userId); //status 200 means OK
+              //  console.log(xhr.responseText); //responseText holds the response data as a string
+            }else{
+                console.error('Error fetching data'); //error handling
+            }
+        }
+    };
+    //new HttpRequest ek object create karte hain
+    //open method se request type, url and async/sync define karte hain
+    //onreadystatechange event handler me state changes ko monitor karte hain
+    //jab readyState 4 hota hai to request complete hoti hai
+    //status check karte hain ki request successful thi ya nahi
+    //responseText me response data milta hai
+    //send method se request bhejte hain
+    //most of the time url se data string format me milta hai
+    //agar json format me data chahiye to usse parse karna padta hai
+    //json parse karne ke liye JSON.parse() method use karte hain
+    
+    xhr.send(); //request sent  
+</script>
+</html>

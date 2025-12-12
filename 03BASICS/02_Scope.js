@@ -33,7 +33,7 @@ console.log("website:", website); // Error: website is not defined
 }
 one();
 
-//+++++++++++++++++++++Inteesting Part++++++++++++++++++++++//
+//+++++++++++++++++++++Interesting Part++++++++++++++++++++++//
 
 console.log(addone(5)); //6 ye run ho jayega kyuki function declaration hai.
 console.log(addtwo(5)); //Error: addtwo is not defined kyuki ye function expression hai.

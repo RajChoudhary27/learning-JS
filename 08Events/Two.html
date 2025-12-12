@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Hello World</h1>
+    <button id="stop">Stop</button>
+</body>
+<script>
+    
+    setTimeout(function(){
+        console.log("Raj Choudhary")
+    },2000)
+    //or in another way
+    const Raj=(function(){
+        console.log("Raj Choudhary");
+    })
+    setTimeout(Raj,5000)
+    // ye 2 second baad name print kar dega
+    const changeText=function(){
+        document.querySelector('h1').innerHTML="Hello Javascript"
+    }
+    const changeMe=setTimeout(changeText,2000)
+    //2 second baad hello ki jagah ye aa jayega
+    //clearTimeout(reference hona chaiyea kisk hatana hai)
+   // clearTimeout(changeMe)  ye nahi karenge kyuki fir setTimeout nahi chalega ..to banaya he kyu
+     document.querySelector('#stop').addEventListener('click',function(){clearTimeout(changeMe)})
+  //iss se agar stop button pe click kiya to change nahi hoga.
+  
+</script>
+</html>

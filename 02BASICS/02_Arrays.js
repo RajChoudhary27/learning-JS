@@ -46,6 +46,7 @@ console.log(Array.from({name: 'John', age: 30}))//creates array from object
 //In this case, the object is not iterable, so it returns an array with undefined values
 //Array.from() works best with iterable objects like strings, sets, and maps
 //difference between Array.from() and Array.of()
+
 //Array.from() creates an array from an array-like or iterable object
 //Array.of() creates an array from a variable number of arguments
 
