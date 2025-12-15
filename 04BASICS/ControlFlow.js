@@ -94,6 +94,13 @@ let grade = (score >= 90) ? 'A' :
             (score >= 70) ? 'C' :
             (score >= 60) ? 'D' : 'F';
 console.log("Your grade is: " + grade); // Output: Your grade is: B 
+
+let age1 = 19;
+let canVote = (age1 >= 18) && "Yes, you can vote."; 
+//it runs for true condition only
+console.log(canVote); // Output: Yes, you can vote.   
+
+
 //This completes the overview of control flow statements in JavaScript.
 //These constructs are fundamental for building logic in your programs and applications.
 //Understanding how to use them effectively will greatly enhance your coding skills.

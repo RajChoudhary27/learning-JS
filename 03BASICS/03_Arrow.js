@@ -71,7 +71,7 @@ const user = {
     name: 'Alice',
 price: 25,
 welcomeMessage: function() {
-    console.log(`Welcome, ${this.name}! Your price is $${this.price}.`);
+    console.log(`Welcome, ${this.name}! Your price is ${this.price}.`);
     console.log(this); // 'this' refers to the user object. output
 }
 };

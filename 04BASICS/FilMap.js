@@ -67,3 +67,35 @@ let fictionBookTitles = books
 
 console.log(fictionBookTitles); // Output: [ 'Book One' ]
 console.log(processedNumbers); // Output: [4, 16, 36, 64, 100]
+
+//Find method is used to return the first element in an array that satisfies the provided testing function.
+//If no elements satisfy the testing function, it returns undefined.
+
+//Example of find
+let users = [
+    { id: 1, name: "Alice" },
+    { id: 2, name: "Bob" },
+    { id: 3, name: "Charlie" }
+];
+
+let user = users.find(function(user) {
+    return user.id === 2;
+});
+console.log(user); // Output: { id: 2, name: 'Bob' }
+
+//second example of find using arrow function
+let charlie = users.find(user => user.name === "Charlie");
+console.log(charlie); // Output: { id: 3, name: 'Charlie' }
+
+//It returns the first element that matches the condition specified in the callback function.
+//Real world example of find a product by its name
+let productList = [
+    { name: "Laptop", price: 1000 },
+    { name: "Phone", price: 500 },
+    { name: "Tablet", price: 300 }
+];
+
+let product = productList.find(product => product.name === "Phone");
+console.log(product); // Output: { name: 'Phone', price: 500 }
+
+//In summary, the find method is useful for locating a specific element in an array based on a condition. It returns the first matching element or undefined if no match is found. This method is particularly handy when you need to retrieve a single item from a collection.

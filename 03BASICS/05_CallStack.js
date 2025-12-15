@@ -1,10 +1,12 @@
 //Javascript Execution Context and Call Stack
 //in it we will see how the call stack works in JavaScript by creating a few functions that call each other
 //and observing how the call stack manages the execution contexts of these functions.
+
 //their are two types of execution contexts in JavaScript:
 //1.Global Execution Context
 //2.Function Execution Context
 //3.Eval Execution Context (not commonly used)
+
 //Global Execution Context is created when the script starts executing
 //Function Execution Contexts are created when functions are invoked
 //eval Execution Contexts are created when eval function is executed
@@ -14,6 +16,7 @@
 //  - Global Object (window in browsers) is created
 //  - 'this' keyword is set to point to the global object
 //  - Variables and functions are hoisted (memory allocation)
+
 //2.Execution Phase:
 //  - Code is executed line by line
 //  - Variables are assigned values

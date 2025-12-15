@@ -14,12 +14,12 @@
 })();
 //console.log(secret); // Error: secret is not defined
 
-//IIFE with Parameters
+//IIFE with Parameters.
 (function(name){
     console.log("Hello, " + name + " from IIFE!"); // Output: Hello, Alice from IIFE!
 })("Alice");
 
-//IIFE returning a value
+//IIFE returning a value.
 const result = (function(a, b){
     return a + b;
 })(5, 10);
