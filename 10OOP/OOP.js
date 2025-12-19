@@ -66,6 +66,6 @@ const cat2 = new Animal1('Cat', 'Meow');
 dog2.speak(); // Output: Dog says Woof
 cat2.speak(); // Output: Cat says Meow
 
-// In this example, we define a constructor function `Animal1` that initializes the `name` and `sound` properties. The `speak` method is added to the prototype of the constructor function. We then create instances of the `Animal1` constructor for a dog and a cat, and call their `speak` methods to demonstrate polymorphism.
+// In this example, we define a constructor function `Animal1` that initializes the `name` and `sound` properties. The `speak` method is added to the prototype of the constructor function. We then create 7 instances of the `Animal1` constructor for a dog and a cat, and call their `speak` methods to demonstrate polymorphism.
 
-// OOP in JavaScript allows for encapsulation, inheritance, and polymorphism, enabling developers to create modular and reusable code.  
+// OOP in JavaScript allows for encapsulation, inheritance, and polymorphism, enabling developers to create modular and reusable code. 
