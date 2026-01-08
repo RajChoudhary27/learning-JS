@@ -1,39 +1,85 @@
-# learning-JS
-Hi there! 👋
-I’m Raj Choudhary, and this repository contains all the code and practice exercises I’ve done while learning JavaScript from the Chai aur Code (Hitesh Choudhary) YouTube playlist.
+👋 About Me
 
-📚 Current Progress
+Hi, I’m Raj Choudhary 👨‍💻
+A B.Tech Computer Science student and an aspiring Software Developer.
 
-✅ Basics of JavaScript completed
+This repository represents my JavaScript learning journey, where I practice concepts, build real-world mini projects, and prepare myself for React.js and backend development.
 
-✅ Variables, Data Types, Operators
+📚 About This Repository
 
-✅ Strings and String Methods
+📌 What this repository contains:
 
+Core JavaScript concepts (from basics to advanced)
+
+DOM manipulation & event handling
+
+Asynchronous JavaScript (Promises, async/await)
+
+Mini JavaScript projects for hands-on practice
+
+📌 Learning sources:
+
+Chai aur Code – JavaScript Playlist
+
+Self-practice, experimentation & problem solving
+
+📈 Learning Progress Tracker
+
+✅ JavaScript Basics
+✅ Variables, Data Types & Operators
+✅ Strings & String Methods
 ✅ Conditional Statements & Loops
+✅ Functions & Arrays
+✅ DOM Manipulation
+✅ Events in JavaScript
+✅ Async JavaScript (Promises, async/await)
+✅ Object-Oriented Programming (OOP)
 
-✅ Arrays (completed)
+🚀 Next Target → React.js
 
-🔜 Next Topic: Objects
+📂 Folder Structure
 
-🧠 About This Repo
+01BASICS → JavaScript fundamentals
+02BASICS → Variables, data types & operators
+03BASICS → Loops & conditional statements
+04BASICS → Functions & arrays
+06DOM → DOM manipulation
+07Project → JavaScript mini projects
+08Events → Event handling
+09Advance_One → Advanced JavaScript concepts (Promises, async/await)
+10OOP → Object Oriented Programming
 
-This repo is a collection of my daily practice files, examples, and experiments as I continue to learn JavaScript step by step.
-It helps me track my progress and build a strong foundation in JS.
+🛠️ JavaScript Projects
+🌦️ Weather App
 
-🧩 Learning Source
+Fetches real-time weather data using API
 
-Chai aur Code - JavaScript Playlist
- by Hitesh Choudhary
+Uses Async/Await & Fetch API
 
-🛠️ Tools Used
+Displays dynamic UI updates based on city input
 
-VS Code as code editor
+📰 News App
 
-Node.js for running JavaScript
+Fetches latest news using News API
 
-GitHub for version control
+Search-based news filtering
 
-💡 Goal
+Dynamic DOM rendering using JavaScript
 
-My goal is to gain a solid understanding of Core JavaScript, move on to ES6 concepts, and eventually learn backend development using Node.js.
+✅ To-Do List App
+
+Add, delete, and manage daily tasks
+
+Uses DOM manipulation & event handling
+
+Beginner-friendly project for logic building
+
+🎯 DOM & Event Practice
+
+Button click & input events
+
+Dynamic UI updates
+
+Hands-on practice of JavaScript events
+
+👉 These projects helped me understand real-world JavaScript usage, not just theory.
