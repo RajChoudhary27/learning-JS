@@ -11,7 +11,8 @@ class User{
 class Teacher extends User{ //Teacher class User class ko inherit kar raha hai
     con
 
-    teach(){structor(username,subject){
+    teach(){structor(username,subject)
+    {
         super(username) //super keyword se apan parent class ke constructor ko call kar sakte hai
         this.subject=subject
     }

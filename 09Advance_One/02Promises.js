@@ -98,3 +98,15 @@ const promisefour= new Promise(function(resolve, reject) {
     .then(response => response.json())
     .then(data => console.log(data))
     .catch(error => console.error('Error fetching posts:', error)); 
+
+//  async function ka rule
+// async function hamesha Promise return karta hai
+// async function fetchData() {
+//   try {
+//     let response = await fetch(url);
+//     let data = await response.json();
+//     console.log(data);
+//   } catch (error) {
+//     console.log(error);
+//   }
+// }

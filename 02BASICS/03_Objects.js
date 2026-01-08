@@ -14,7 +14,7 @@ let person = {
     age: 30,
     email:"John@gmail.com",
     [sym1]: 'This is a symbol property',  //symbol ko bracket notation me hi access kar sakte hai kyuki ye unique hota hai.
-   greet: function() {
+    greet: function() {
         console.log("Hello!");
     }
 };

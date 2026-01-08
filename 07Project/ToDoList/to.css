@@ -1,0 +1,75 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+/* full page center */
+.container {
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #153677, #4e085f);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* main todo box */
+.todo {
+    width: 30%;
+    max-height: 540px;
+    background: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+/* heading */
+.todo h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* input + button */
+.row {
+    display: flex;
+    background: #edeef0;
+    border-radius: 25px;
+    margin-bottom: 20px;
+}
+
+input {
+    flex: 1;
+    border: none;
+    outline: none;
+    background: transparent;
+    padding: 12px 15px;
+}
+
+button {
+    border: none;
+    background: #153677;
+    color: #fff;
+    padding: 12px 30px;
+    border-radius: 25px;
+    cursor: pointer;
+}
+
+/* task list scroll */
+#list-container {
+    max-height: 280px;
+    overflow-y: auto;
+     padding-right: 18px;   
+    margin-right: -8px;
+}
+
+/* task item */
+ul li {
+    list-style: none;
+    padding: 12px;
+    font-size: 16px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
